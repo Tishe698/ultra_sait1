@@ -1,0 +1,20 @@
+<section id="portfolio">
+    {% for image in images %}
+        <div class="project">
+            <img class="project__image" src="{{ image.image1.url }}" alt="Изображение" class="image-click"
+                 data-modal-id="modal-{{ forloop.counter }}">
+            <h1>{{ image.description }}</h1>
+            <div class="grid__overlay">
+                <button class="viewbutton">+</button>
+            </div>
+        </div>
+        <div class="overlay" id="modal-{{ forloop.counter }}">
+            <div class="overlay__inner">
+                <button class="close_dum">close X</button>
+                <img src="{{ image.image1.url }}" alt="Второе изображение" class="linked-image-click">
+            </div>
+        </div>
+
+    {% endfor %}
+
+</section>

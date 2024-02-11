@@ -1,0 +1,129 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/этапы.css' %}">
+    <link rel="stylesheet" href="{% static 'css/tariphy.css' %}">
+    <link rel="stylesheet" href="{% static 'css/свяжитесь с нами.css' %}">
+    <link rel="stylesheet" href="{% static 'css/vash_sait.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/forma.css' %}">
+    <link rel="stylesheet" href="{% static 'css/forma2.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'js/прокрутка.js' %}"></script>
+    <link rel="stylesheet" href={% static "css/анимация_прокрутки.css" %}>
+    <title>PixelPulse Tech</title>
+</head>
+
+<body>
+{% include 'forma.html' %}
+{% include 'forma2.html' %}
+<div class="section1">
+    {% include 'header.html' %}
+    <div class="conteiner_section1">
+        <div class="block_sozdaem_saity">
+            <h1 class="sozdaem_saity_kluch ">
+                Создаём сайты под ключ
+            </h1>
+            <h2 class="razrabotka_sovrem_saitov">
+                Разработка современных сайтов под ключ для вашего бизнеса от 14 рабочих дней
+            </h2>
+            <div class="zopolnity_formy_kartinka_block">
+                <h3 class="zapolnity_formy">
+                    Заполните форму прямо сейчас и получите уникальное предложение
+                </h3>
+            </div>
+            <div class="zapolny_formy_block">
+                <p class="zapolnyt_formy forma_otkroisy">
+                    Заказать сайт
+                </p>
+                <p class="bazovay_adaptacia">
+                    Базовая адаптация и домен в подарок
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'vash_sait.html' %}
+<div class="conteiner_section2">
+    <h1 class="preimyshestvo" id="preimyshestvo">Преимущества работы с нами</h1>
+    <div class="container">
+        <div class="item">
+            <img class="gifka animatable fadeInUp" src="{% static 'img/картинки gifki/1 картинка.gif' %}" alt="">
+            <h2 class="absol_proz">
+                Абсолютная прозрачность
+            </h2>
+            <p class="text2">
+                Приглашаем вас окунуться в наш творческий процесс, обеспечивая открытый доступ ко всем материалам на
+                каждом этапе разработки. Вы можете каждый день отслеживать процесс работы
+            </p>
+        </div>
+        <div class="item">
+            <img class="gifka animatable fadeInUp" src="{% static 'img/картинки gifki/2 картин.gif' %}" alt="">
+            <h2 class="absol_proz">
+                Оперативная реакция
+            </h2>
+            <p class="text2">
+                Ваши запросы не остаются без ответа, а работы выполняются в сжатые сроки.
+            </p>
+        </div>
+        <div class="item">
+            <img class="gifka animatable fadeInUp" src="{% static 'img/картинки gifki/3.gif' %}" alt="">
+            <h2 class="absol_proz">
+                Управление контентом
+            </h2>
+            <div class="text2">
+                 Наш интуитивно понятный интерфейс позволяет вам легко обновлять контент самостоятельно, поддерживая
+                актуальность информации.
+            </div>
+        </div>
+        <div class="item">
+            <img class="gifka animatable fadeInUp" src="{% static 'img/картинки gifki/4.gif' %}" alt="">
+            <h2 class="absol_proz">
+                Забота до конца
+            </h2>
+            <p class="text2">
+                Мы берем на себя все технические нюансы, включая размещение сайта на сервере. Ваш сайт становится
+                доступным для всего мира.
+            </p>
+        </div>
+        <div class="item">
+            <img class="gifka animatable fadeInUp" src="{% static 'img/картинки gifki/5.gif' %}" alt="">
+            <h2 class="absol_proz">
+                Адаптация
+            </h2>
+            <div class="text2">
+                Это процесс, в ходе которого сайт разрабатывается так, чтобы он корректно и удобно отображался на
+                различных устройствах и экранах, включая компьютеры, планшеты и мобильные устройства.
+            </div>
+        </div>
+        <div class="item">
+            <img class="gifka animatable fadeInUp" src="{% static 'img/картинки gifki/6.gif' %}" alt="">
+            <h2 class="absol_proz">
+                Создание бренда и логотипа
+            </h2>
+            <p class="text2">
+                В этот этап мы вкладываем душу. Это помогает вашему бизнесу выделиться и запомниться в глазах
+                потенциальных клиентов.
+            </p>
+        </div>
+    </div>
+</div>
+
+{% include 'etapy.html' %}
+{% include 'tariphy_v1.html' %}
+{% include 'свяжитесь_с_нами.html' %}
+{% include 'footer_v1.html' %}
+<script src="{% static 'js/форма.js' %}"></script>
+<script src="{% static 'js/poyzvlenie_forms.js' %}"></script>
+<script src="{% static 'js/появление второй формы.js' %}"></script>
+</body>
+</html>

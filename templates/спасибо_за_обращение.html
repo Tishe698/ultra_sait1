@@ -1,0 +1,51 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pixel_pulse_techno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/forma_spasibo.css' %}">
+</head>
+<body>
+<div class="container_backgr_uspeh">
+    <div class="container_uspeh">
+        <div class="uspeh">
+            Ваша форма обратной связи успешна отправлена .
+        </div>
+        <div class="gif_uspeh">
+            <img src="{% static 'img/email.gif' %}" alt="">
+        </div>
+        <div class="svyz_menedzher">
+            В ближайщее время наш менеджер свяжется с вами для уточнения деталей и составит персональное предлодежение
+            именно для вас .
+        </div>
+        <a class="knopka_vernutsy_sait" href="{% url 'home' %}">Вернуться на сайт</a>
+        <div id="countdown" class="countdown"></div>
+
+    </div>
+</div>
+
+
+<script>
+    var seconds = 14; // начальное количество секунд
+
+    function updateCountdown() {
+        var countdownElement = document.getElementById('countdown');
+        countdownElement.innerText = "Через " + seconds + " секунд вы автоматически будете перенаправленны на главную страницу";
+
+        if (seconds <= 0) {
+            // Перенаправление на главную страницу после завершения счетчика
+            window.location.href = "{% url 'home' %}";
+        } else {
+            seconds--;
+            setTimeout(updateCountdown, 1000); // обновляем счетчик каждую секунду (1000 миллисекунд)
+        }
+    }
+
+    // Запускаем функцию обратного отсчета после загрузки страницы
+    window.addEventListener('load', updateCountdown);
+</script>
+</body>
+</html>

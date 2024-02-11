@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/nav_bar.css' %}">
+</head>
+<header>
+    <nav class="close" role="navigation">
+        <a class="logo" href="{% url 'home' %}">
+            <img src="{% static 'img/logotip.png' %}" alt="">
+        </a>
+        <div id="menuToggle">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="{% url 'home' %}#preimyshestvo">
+                    <li class="lishki">Преимущества</li>
+                </a>
+                <a href="#tariphy">
+                    <li class="lishki">Цены</li>
+                </a>
+                <a href="#etapy">
+                    <li class="lishki">Этапы работы</li>
+                </a>
+                <a href="#">
+                    <li class="zakaz_sait_burger forma_otkroisy2">Связаться</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <div class="open">
+        <div class="header_open">
+            <a class="foto" href="{% url 'home' %}">
+                <img src="{% static 'img/logotip.png' %}" alt="">
+            </a>
+            <div class="links">
+                <a class="preimshestvo" href="{% url 'home' %}#preimyshestvo">
+                    Преимущества
+                </a>
+                <a class="etapy" href="#etapy">
+                    Этапы работы
+                </a>
+                <a class="cena" href="#tariphy">
+                    Цены
+                </a>
+            </div>
+            <div class="links2">
+                <div class="zakaz_sait forma_otkroisy2">
+                    Связаться
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+</html>
