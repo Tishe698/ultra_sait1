@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body {
+
+}
+
+.conteiner_section1 {
+    width: 556px;
+    max-width: 100%;
+    min-height: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-bottom: 3vw;
+
+}
+
+.section1 {
+    background: url("../img/Портрет 3 1.png"),no-repeat fixed;
+    height: auto;
+    background-size: cover;
+}
+
+.block_sozdaem_saity {
+    display: flex;
+    flex-direction: column;
+}
+
+.block_babki {
+    position: relative;
+    width: 235px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dengi {
+    z-index: 1;
+    color: white;
+    font-size: 33px;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+.sozdaem_saity_kluch {
+    color: #2E363E;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.0625rem;
+    width: 528px;
+    max-width: 100%;
+}
+
+.kvadrat_dingi {
+    position: absolute;
+    transform: rotate(-2.004deg);
+    height: 48px;
+    width: 232px;
+    background: #5CD6D6;
+    border-radius: 3rem;
+}
+
+.razrabotka_sovrem_saitov {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+    letter-spacing: -0.0125rem;
+    color: #2E363E;
+    width: 490px;
+    max-width: 100%;
+    padding-top: 1%;
+}
+
+.zapolnity_formy {
+    color: white;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.06875rem;
+    text-transform: uppercase;
+    display: flex;
+    width: 32.1875rem;
+    max-width: 100%;
+    height: auto;
+    background: #2E363E;
+    padding: 9px;
+    margin-top: 4%;
+    align-items: center;
+    justify-content: center;
+}
+
+.zapolny_formy_block {
+    display: flex;
+    gap: 15px;
+    width: 400px;
+    padding-top: 40px;
+}
+
+.zapolnyt_formy {
+    font-size: 19px;
+    width: 234px;
+    height: 54px;
+    background-color: #2E363E;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'MONTSERRAT';
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.bazovay_adaptacia {
+    font-size: 14px;
+    width: 177px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    color: #2E363E;
+}
+
+
+/*
+2block
+*/
+.conteiner_section2 {
+    width: 73.671%;
+    margin: 0 auto;
+    margin-top: 3%;
+    min-height: auto;
+    padding-bottom: 3%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.preimyshestvo {
+    display: flex;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 300;
+    text-align: center;
+    justify-content: center;
+}
+
+.item {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gifka {
+    width: 190px;
+}
+
+.absol_proz {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 19px;
+    color: #2E363E;
+    font-family: Montserrat;
+    font-weight: 300;
+    line-height: 137%;
+}
+
+.text2 {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    font-family: Montserrat;
+    width: 100%;
+    line-height: 154%;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    padding-top: 3%;
+}
+
+
+@media (min-width: 992px) {
+    .conteiner_section1 {
+        width: 619px;
+    }
+
+    .zapolny_formy_block {
+        width: 600px;
+
+    }
+
+    .zapolnyt_formy {
+        font-size: 25px;
+        width: 292px;
+        height: 72px;
+    }
+
+    .bazovay_adaptacia {
+        font-size: 20px;
+        width: 273px;
+        height: 74px;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, minmax(250px, 1fr)); /* 3 колонки на экранах 769px и больше */
+    }
+}
+
+@media (min-width: 1701px) {
+
+    .conteiner_section1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sozdaem_saity_kluch {
+        font-size: 4.7vw;
+        width: 42vw;
+    }
+
+    .razrabotka_sovrem_saitov {
+        font-size: 1.7vw;
+        width: 39vw;
+        padding-top: 2vw;
+    }
+
+    .zapolnity_formy {
+        font-size: 1.3vw;
+        width: 39vw;
+        padding: 0.5vw;
+    }
+
+    .zapolny_formy_block {
+        width: 39vw;
+    }
+
+    .zapolnyt_formy {
+        font-size: 1.4vw;
+        width: 18vw;
+        height: 5vw;
+    }
+
+    .bazovay_adaptacia {
+        font-size: 1.6vw;
+        width: 20vw;
+        height: 5vw;
+
+    }
+
+    .block_sozdaem_saity {
+        padding: 3vw;
+    }
+
+    .preimyshestvo {
+        font-size: 1.5vw;
+    }
+
+    .gifka {
+        width: 13vw;
+    }
+
+    .absol_proz {
+        font-size: 1.3vw;
+    }
+
+    .text2 {
+        font-size: 1.05vw;
+        width: 17vw;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, minmax(205px, 1fr));
+    }
+
+    .gifka {
+        width: 200px;
+    }
+}
+
+@media (max-width: 622px) {
+    .zapolnity_formy {
+        text-align: center;
+        margin-top: 4%;
+    }
+
+    .sozdaem_saity_kluch {
+        font-size: 51px;
+    }
+
+    .razrabotka_sovrem_saitov {
+        font-size: 21px;
+        padding-top: 2%;
+    }
+}
+
+@media (max-width: 526px) {
+    .container {
+        grid-template-columns: repeat(1, minmax(205px, 1fr));
+    }
+
+    .conteiner_section1 {
+        min-height: 70vh;
+    }
+
+    .conteiner_section1 {
+        padding: 10vh 20px;
+    }
+}
+
+@media (max-width: 456px) {
+    .zapolny_formy_block {
+        display: flex;
+        gap: 15px;
+        width: 400px;
+        max-width: 100%;
+        padding-top: 4%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bazovay_adaptacia {
+        text-align: center;
+    }
+
+    .sozdaem_saity_kluch {
+        color: #2E363E;
+        font-size: 44px;
+        width: 528px;
+
+    }
+
+    .razrabotka_sovrem_saitov {
+        font-family: Montserrat;
+        font-size: 19px;
+        width: 409px;
+    }
+
+    .zapolnity_formy {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
