@@ -242,8 +242,8 @@ header {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 12vw;
-    font-family: Montserrat;
+    gap: 8vw;
+    font-family: Montserrat, serif;
     justify-content: center;
 }
 @media (min-width: 1701px) {

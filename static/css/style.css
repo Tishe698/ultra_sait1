@@ -5,8 +5,13 @@
     font-family: Montserrat;
 }
 
-body {
-
+.Ultra_Sait_logo {
+    font-size: 48px; /* Установите размер шрифта по вашему усмотрению */
+    font-weight: bold; /* Жирный шрифт для выделения */
+    color: transparent; /* Делаем текст прозрачным */
+    background: linear-gradient(to right, rgb(47, 48, 48) 29%, rgb(92, 202, 202) 36%);
+    -webkit-background-clip: text; /* Применяем градиент только к тексту */
+    background-clip: text;
 }
 
 .conteiner_section1 {
@@ -326,8 +331,16 @@ body {
     }
 
     .conteiner_section1 {
-        padding: 10vh 20px;
+        padding: 16vh 20px;
     }
+
+    .Ultra_Sait_logo {
+    font-size: 33px; /* Установите размер шрифта по вашему усмотрению */
+    color: transparent; /* Делаем текст прозрачным */
+    background: linear-gradient(to right, rgb(47, 48, 48) 29%, rgb(92, 202, 202) 30%);
+    -webkit-background-clip: text; /* Применяем градиент только к тексту */
+    background-clip: text;}
+
 }
 
 @media (max-width: 456px) {
@@ -362,6 +375,13 @@ body {
     .zapolnity_formy {
         font-size: 14px;
     }
+    .Ultra_Sait_logo {
+    font-size: 28px; /* Установите размер шрифта по вашему усмотрению */
+    color: transparent; /* Делаем текст прозрачным */
+    background: linear-gradient(to right, rgb(47, 48, 48) 29%, rgb(92, 202, 202) 46%);
+    -webkit-background-clip: text; /* Применяем градиент только к тексту */
+    background-clip: text;}
+
 }
 
 
