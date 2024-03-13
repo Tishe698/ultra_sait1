@@ -9,10 +9,34 @@
     font-size: 48px; /* Установите размер шрифта по вашему усмотрению */
     font-weight: bold; /* Жирный шрифт для выделения */
     color: transparent; /* Делаем текст прозрачным */
-    background: linear-gradient(to right, rgb(47, 48, 48) 29%, rgb(92, 202, 202) 36%);
+    background: linear-gradient(to right, rgb(47, 48, 48) 23%, rgb(92, 202, 202) 36%); /* Градиент от черного к синему */
     -webkit-background-clip: text; /* Применяем градиент только к тексту */
     background-clip: text;
+    animation: color-change 3s forwards, reset-color 1s 3s forwards; /* Добавляем анимацию изменения цвета текста и плавного сброса цвета */
+    text-decoration: none; /* Убираем подчеркивание */
 }
+
+/* Создаем анимацию изменения цвета текста */
+@keyframes color-change {
+    from {
+        color: rgb(47, 48, 48); /* Начальный цвет - прозрачный */
+    }
+    to {
+        color: rgb(92, 202, 202); /* Конечный цвет - красный */
+    }
+}
+
+/* Создаем анимацию плавного сброса цвета текста */
+@keyframes reset-color {
+    from {
+        color: rgb(92, 202, 202); /* Начальный цвет - красный */
+    }
+    to {
+        color: transparent; /* Сбрасываем цвет текста до полностью прозрачного */
+    }
+}
+
+
 
 .conteiner_section1 {
     width: 556px;
