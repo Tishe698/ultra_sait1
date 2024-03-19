@@ -6,10 +6,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'FacXqHNrFvTQBmAlkKFSMADlLUrZKXoWNPYQoXsrDtWGaMTdDk'
+SECRET_KEY = 'Sy2?R*U5Zv!LcP@J#sXkWnQoEhGmYb^T&f^u%r$gPw@zNsL5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['ultrasait.ru', 'www.ultrasait.ru', 'localhost']
 
