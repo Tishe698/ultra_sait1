@@ -14,7 +14,7 @@ desktop.ini
 # Configuration files
 .env
 .env.local
-
+*.settings
 # Cache and logs
 cache/
 logs/
