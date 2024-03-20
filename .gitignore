@@ -14,11 +14,11 @@ desktop.ini
 # Configuration files
 .env
 .env.local
-*.settings
+
 # Cache and logs
 cache/
 logs/
-
+moisait/settings.py
 # Secret files
 api_key.txt
 credentials.json
