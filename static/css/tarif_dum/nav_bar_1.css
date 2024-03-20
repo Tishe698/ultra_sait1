@@ -205,7 +205,7 @@ header {
     line-height: 4.5vw;
     gap: 6.3vw;
     color: white;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .links2 {
@@ -279,3 +279,4 @@ header {
         display: none;
     }
 }
+

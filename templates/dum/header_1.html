@@ -8,9 +8,6 @@
 </head>
 <header>
     <nav class="close" role="navigation">
-        <a class="logo" href="{% url 'home' %}">
-            <img src="{% static 'img/logotip.png' %}" alt="">
-        </a>
         <div id="menuToggle">
             <input type="checkbox"/>
             <span></span>
@@ -34,9 +31,7 @@
     </nav>
     <div class="open">
         <div class="header_open">
-        <a class="foto" href="{% url 'home' %}">
-            <img src="{% static 'css/tarif_dum/img/logotip_dum.png' %}" alt="">
-        </a>
+
             <div class="links">
                 <a class="preimshestvo" href="{% url 'home' %}#preimyshestvo">
                     Преимущества
